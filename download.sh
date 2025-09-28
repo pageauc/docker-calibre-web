@@ -1,11 +1,11 @@
 #!/bin/bash
 
-CONTAINER_NAME="calibre-web"
+CONTAINER_NAME='calibre-web'
 CURRENT_USER=$(whoami)
 
 cd ~
-mkdir -p calibre-web
-cd calibre-web
+mkdir -p $CONTAINER_NAME
+cd $CONTAINER_NAME
 mkdir -p library
 
 echo "Check if there are upgradable operating system packages."
