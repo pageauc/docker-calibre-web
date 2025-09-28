@@ -5,12 +5,12 @@
 #### Step 1
 Press GitHub copy icon on right side of code box below.  Copied! will be displayed.   
 
-    curl -L https://raw.github.com/pageauc/docker-calibre-web/master/source/download.sh | bash
+    curl -L https://raw.github.com/pageauc/docker-calibre-web/master/download.sh | bash
 
 #### Step 2
-On RPI putty SSH or terminal session right click, select paste then Enter to Download and Run **speed-install.sh** script.  
+On RPI putty SSH or terminal session right click, select paste then Enter to Download and Run **download.sh** script.  
 
-The download.sh script will run and perform the following.
+The download.sh script will run and perform the following actions.
 
 * Perform a sudo apt update and upgrade if required
 * install/upgrade docker, docker-compose and cifs-util well as required
