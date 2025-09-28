@@ -12,7 +12,7 @@ echo "Check if there are upgradable operating system packages."
 if apt list --upgradable 2>/dev/null | grep -q "Listing..."; then
     echo "No packages need upgrading."
 else
-    echo "Packages are available for upgrade. running 'sudo apt update and sudo apt upgrade'."
+    echo "Packages are available for upgrade. running sudo apt update and sudo apt upgrade"
 	sudo apt update
 	sudo apt upgrade -y
 fi
@@ -24,7 +24,7 @@ sudo apt install docker docker-compose -y  # install docker and docker-compose
 echo "Downloading calibre-web docker installation files"
 wget -O docker-compose-yml -q --show-progress https://raw.github.com/pageauc/docker-calibre-web/master/docker-compose.yml
 wget -O install.sh -q --show-progress https://raw.github.com/pageauc/docker-calibre-web/master/install.sh
-wget -O /library/metadata.db -q --show-progress https://raw.github.com/pageauc/docker-calibre-web/master/metadata.db
+wget -O library/metadata.db -q --show-progress https://raw.github.com/pageauc/docker-calibre-web/master/metadata.db
 wget -O Readme.md -q --show-progress https://raw.github.com/pageauc/docker-calibre-web/master/Readme.md
 chmod +x install.sh
 
