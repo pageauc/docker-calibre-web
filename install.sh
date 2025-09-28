@@ -6,6 +6,8 @@ echo "Building/upgrading calibre-web docker-web image.  Please Wait ...."
 docker-compose up -d
 
 echo "
+                   - INSTRUCIONS -
+
 calibre-web login page should be available from your web browser at
 
     http://host:port
@@ -33,11 +35,13 @@ for more details see https://github.com/pageauc/
 
 docker-compose ps
 -----------------
+"
+docker-compose ps
+echo "-----------------
+If calibre-web is running per above
+From a Web Browser, Access the login page Eg. http://$HOSTNAME.local:8083
+default admin login is admin password admin123.  See Instructions above.  
 
 "
-
-docker-compose ps
-echo "
------------------"
 echo "$0 Bye ...."
 
