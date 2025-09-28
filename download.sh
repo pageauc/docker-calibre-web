@@ -22,7 +22,7 @@ sudo apt install cifs-utils -y   # Required for mounting remote ebook share if R
 sudo apt install docker docker-compose -y  # install docker and docker-compose
 
 echo "Downloading calibre-web docker installation files"
-wget -O docker-compose-yml -q --show-progress https://raw.github.com/pageauc/docker-calibre-web/master/docker-compose.yml
+wget -O docker-compose.yml -q --show-progress https://raw.github.com/pageauc/docker-calibre-web/master/docker-compose.yml
 wget -O install.sh -q --show-progress https://raw.github.com/pageauc/docker-calibre-web/master/install.sh
 wget -O library/metadata.db -q --show-progress https://raw.github.com/pageauc/docker-calibre-web/master/metadata.db
 wget -O Readme.md -q --show-progress https://raw.github.com/pageauc/docker-calibre-web/master/Readme.md
