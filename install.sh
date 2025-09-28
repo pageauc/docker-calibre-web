@@ -6,13 +6,15 @@ echo "Building/upgrading calibre-web docker-web image.  Please Wait ...."
 docker-compose up -d
 
 echo "
-                   - INSTRUCIONS -
+----------------------------- INSTRUCIONS ---------------------------------
 
 calibre-web login page should be available from your web browser at
 
     http://host:port
 
-where host is the IP address or hostname  eg http://rpi-media.local:8083 or http://192.168.1.124:8083
+Where host is the IP address or hostname  
+
+eg http://$HOSTNAME.local:8083 or http://192.168.1.124:8083
 
 Login to calibre-web as administrator login admin  password admin123
 After login navigate to /books folder and select the metadata.db file (should be at bottom of folders listing,
@@ -37,7 +39,7 @@ docker-compose ps
 -----------------
 "
 docker-compose ps
-echo "-----------------
+echo "-----------------------------------------------------------------------
 If calibre-web is running per above
 From a Web Browser, Access the login page Eg. http://$HOSTNAME.local:8083
 default admin Username is admin with Password admin123
