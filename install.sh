@@ -4,7 +4,6 @@ echo $0
 echo "Building/upgrading calibre-web docker-web image.  Please Wait ...."
 
 docker-compose up -d
-docker-compose ps
 
 echo "
 calibre-web login page should be available from your web browser at
@@ -32,7 +31,10 @@ Once logged in as admin, add/edit users and set comfiguration options using the 
 
 for more details see https://github.com/pageauc/
 
+docker-compose ps
+-----------------
 "
-echo $0
-echo "Bye ...."
+docker-compose ps
+echo "-----------------"
+echo "$0 Bye ...."
 
