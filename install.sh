@@ -43,6 +43,7 @@ echo "-----------------------------------------------------------------------
 If calibre-web is Up (running) per above
 From a Web Browser, Access the login page Eg. http://$HOSTNAME.local:8083
 default admin Username is admin with Password admin123
+
 For more Details See Instructions above.  
 
 "
