@@ -28,9 +28,7 @@ wget -O library/metadata.db -q --show-progress https://raw.github.com/pageauc/do
 wget -O Readme.md -q --show-progress https://raw.github.com/pageauc/docker-calibre-web/master/Readme.md
 chmod +x install.sh
 
-if getent group "$GROUP_NAME" >/dev/null; then
-    echo "Group '$GROUP_NAME' exists."
-else
+if ! getent group "$GROUP_NAME" >/dev/null; then
     echo "Adding docker group"
     sudo groupadd docker
 fi
