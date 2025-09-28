@@ -4,8 +4,8 @@ CONTAINER_NAME="calibre-web"
 CURRENT_USER=$(whoami)
 
 cd ~
-mkdir -p $CONTAINER_NAME
-cd $CONTAINER_NAME
+mkdir -p calibre-web
+cd calibre-web
 mkdir -p library
 
 echo "Check if there are upgradable operating system packages."
@@ -31,7 +31,7 @@ chmod +x install.sh
 if getent group "$GROUP_NAME" >/dev/null; then
     echo "Group '$GROUP_NAME' exists."
 else
-    echo "Adding docker group"		
+    echo "Adding docker group"
     sudo groupadd docker
 fi
 
@@ -40,11 +40,11 @@ if ! id -Gn "$CURRENT_USER" | grep -q -w "docker"; then
     echo "Add $CURRENT_USER to group"
     sudo usermod -aG docker $CURRENT_USER
 	echo "
-	
+
 Logout and login to ensure you are in the docker group otherwise
 you will need to manually run
-	
-	sudo docker-compose -up	
+
+	sudo docker-compose -up
 
 	"
 fi
@@ -56,15 +56,15 @@ Edit the docker-compose.yml file per commands below
 
     cp docker-compose.yml docker-compose.yml.bak
     nano docker-compose.yml
-   
+
 See comments and make changes as required.  ctr-x y  saves changes and exits.
-   
+
 Make sure your calibre library folder is mounted at specified share path or
 local disk folder path per setting in docker-compose.yml
-	   
+
 When Ready Run command below
 
-    ./install.sh   
+    ./install.sh
 
 This will run calibre-web docker-compose install and provide additional Instructions
 
