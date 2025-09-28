@@ -33,8 +33,11 @@ for more details see https://github.com/pageauc/
 
 docker-compose ps
 -----------------
+
 "
+
 docker-compose ps
-echo "-----------------"
+echo "
+-----------------"
 echo "$0 Bye ...."
 
