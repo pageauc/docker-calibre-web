@@ -40,7 +40,8 @@ docker-compose ps
 echo "-----------------
 If calibre-web is running per above
 From a Web Browser, Access the login page Eg. http://$HOSTNAME.local:8083
-default admin login is admin password admin123.  See Instructions above.  
+default admin username is admin with password admin123
+For more Details See Instructions above.  
 
 "
 echo "$0 Bye ...."
