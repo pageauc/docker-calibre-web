@@ -15,15 +15,17 @@ On RPI putty SSH or terminal session right click, select paste then Enter to Dow
 The download.sh script will run and perform the following actions.
 
 * Perform a sudo apt update and upgrade if required
-* install/upgrade docker, docker-compose and cifs-util well as required
-* Download required github files
+* install/upgrade docker, docker-compose and cifs-util as required
+* Download required github files install.sh docker-compose.yml
 * Create docker group and add current user to group
 * Give some basic instructions for running install.sh
 
 #### Step 3
 
-Edit the docker-compose.yml file per commands below
+On the RPI, Edit the docker-compose.yml file per commands below
 
+    ~
+	cd calibre-web
     cp docker-compose.yml docker-compose.yml.bak
     nano docker-compose.yml
 
