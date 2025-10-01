@@ -45,7 +45,9 @@ for more details see https://github.com/pageauc/
 
 To get started, see Instructions at the end of the install script. 
 
-see the calibre-web wiki at https://github.com/janeczku/calibre-web/wiki
+see the calibre-web wiki at 
+    https://github.com/janeczku/calibre-web/wiki
+	https://github.com/janeczku/calibre-web
 
 calibre-web login page should be available from your web browser at
 
@@ -55,7 +57,7 @@ Where host is the IP address or hostname
 
     eg http://rpi-media.local:8083 or http://192.168.1.124:8083
 
-Login to calibre-web as login admin  password admin123
+Login to calibre-web as login **admin**  password **admin123**
 After login navigate to /books folder and select the metadata.db file (should be at bottom of folders listing,
 Depending on the size of your calibre library this may take a while. Be patient.
 Save setting and select books button on left.  I there is a problem check the docker-compose.yml 
