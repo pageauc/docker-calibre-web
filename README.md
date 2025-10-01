@@ -74,14 +74,15 @@ Login to calibre-web as login **admin**  password **admin123**
 
 After login navigate to /books folder and select the metadata.db file (should be at bottom of folders listing,
 Depending on the size of your calibre library this may take a while. Be patient.
-Save setting and select books button on left.  I there is a problem check the docker-compose.yml 
-and verify library is at spcifield path share point or local folder.
+Save setting and select books button on left and you should see your book covers. 
+If there is a problem check the docker-compose.yml 
+and verify library is at spcifield path share point or disk local folder.
 
 Once logged in as admin, add/edit users and set comfiguration options using the top right admin pick
 
 For details see https://github.com/janeczku/calibre-web/wiki/Configuration#basic-configuration
 
-various docker commads you can run (please note docker-compose is depricated but is the default on bookworm)
+various docker commads you can run (please note docker-compose is depricated but is the default on bookworm and earlier.
 
     docker-compose down
 	docker-compose pull
