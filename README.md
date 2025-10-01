@@ -1,4 +1,6 @@
-##      Calibre-web Docker Install
+##      Docker calibre-web Install
+
+Github Automated Docker Install of calibre-web on a Raspberry PI or unix based distro.
 
 ### Quick Install
 
@@ -18,12 +20,29 @@ The download.sh script will run and perform the following actions.
 * Create docker group and add current user to group
 * Give some basic instructions for running install.sh
 
+#### Step 3
+
+Edit the docker-compose.yml file per commands below
+
+    cp docker-compose.yml docker-compose.yml.bak
+    nano docker-compose.yml
+
+See comments and make changes as required.  ctr-x y  saves changes and exits.
+
+Make sure your calibre library folder is mounted at specified share path or
+local disk folder path per setting in docker-compose.yml
+
+When Ready Run command below
+
+    ./install.sh
+
+This will run calibre-web docker-compose install and provide additional Instructions
+
+for more details see https://github.com/pageauc/
 
 ### Instructions
 
-To get started, see Instructions at the end of the install script. Initial default config.py setting is CALIBRATE_ON=True.
-You may also need to Align Camera using config.py ALIGN_CAM_ON=True setting.  Once calibration is complete set CALIBRATE_ON=False
-
+To get started, see Instructions at the end of the install script. 
 
 see the calibre-web wiki at https://github.com/janeczku/calibre-web/wiki
 
