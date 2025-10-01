@@ -18,9 +18,10 @@ Copy command below and past into the SSH or terlmial session
 
 Review file and Run download.sh script
 
+    cat download.sh
     bash download.sh
 
-The download.sh script will run and perform the following actions.
+The download.sh script will run and performs the following actions.
 
 * Perform a sudo apt update and upgrade if required
 * install/upgrade docker, docker-compose and cifs-util as required
