@@ -16,16 +16,15 @@ The download.sh script will run and perform the following actions.
 
 * Perform a sudo apt update and upgrade if required
 * install/upgrade docker, docker-compose and cifs-util as required
-* Download required github files install.sh docker-compose.yml
-* Create docker group and add current user to group
+* Download required github files install.sh, docker-compose.yml, Etc.
+* Create docker group and add current user to group if required.
 * Give some basic instructions for running install.sh
 
 #### Step 3
 
 On the RPI, Edit the docker-compose.yml file per commands below
 
-    ~
-	cd calibre-web
+	cd ~/calibre-web
     cp docker-compose.yml docker-compose.yml.bak
     nano docker-compose.yml
 
