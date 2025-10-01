@@ -2,21 +2,21 @@
 
 Github Automated Docker Install of calibre-web on a Raspberry PI or unix based distro.
 
-### Install
+## Install
 
-#### Quick (option 1)
+#### Quick Install (option 1)
 Press GitHub copy icon on right side of code box below.  Copied! will be displayed.   
 
     curl -L https://raw.github.com/pageauc/docker-calibre-web/master/download.sh | bash
 
 On RPI putty SSH or terminal session right click, select paste then Enter to Download and Run **download.sh** script.  
 
-#### Manual (option 2)
+#### Manual Install (option 2)
 Copy command below and past into the SSH or terlmial session
 
     wget -O download.sh -q --show-progress https://raw.github.com/pageauc/docker-calibre-web/master/download.sh
 
-Review and Run download.sh script
+Review file and Run download.sh script
 
     bash download.sh
 
@@ -28,7 +28,7 @@ The download.sh script will run and perform the following actions.
 * Create docker group and add current user to group if required.
 * Give some basic instructions for running install.sh
 
-### Instructions
+## Instructions
 
 On the RPI, Edit ***docker-compose.yml*** file per commands below
 
@@ -38,7 +38,7 @@ On the RPI, Edit ***docker-compose.yml*** file per commands below
 
 See comments and make changes as required.  ctr-x y  saves changes and exits.
 
-##### Note: 
+#### Note: 
 The default location of ebooks library is a mount point at **/mnt/ebooks/**
 See link below for details on how to mount a share
 
@@ -60,7 +60,7 @@ for more details see
     https://github.com/janeczku/calibre-web/wiki
 	https://github.com/janeczku/calibre-web
 
-### Getting Started
+## Getting Started
 
 calibre-web login page should be available from your web browser at
 
